@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.InputOrEditBarangActivity">
+
+    <ImageView
+        android:id="@+id/gambarBarang"
+        android:layout_width="142dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_insert_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNamaBarang"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/solid_grey"
+        android:drawableStart="@drawable/ic_person_pin"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Nama Barang"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambarBarang"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/edHargaBarang"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/solid_grey"
+        android:drawableStart="@drawable/ic_person_pin"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Harga Barang"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNamaBarang"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/edStokBarang"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/solid_grey"
+        android:drawableStart="@drawable/ic_person_pin"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Stok Barang"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edHargaBarang"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Simpan"
+        android:background="@drawable/bg_button_circle"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
